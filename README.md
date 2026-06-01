@@ -1,5 +1,5 @@
 # tongkyu.kim.github.io
-Professional CV website for Tongkyu Kim - Interdisciplinary climate researcher specializing in climate governance and environmental behavior.
+CV website for Tongkyu Kim - Interdisciplinary climate researcher specializing in climate governance and environmental behavior
 
 ## Overview
 
