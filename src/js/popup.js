@@ -149,6 +149,12 @@ class PopupManager {
           '<p>Preprint unavailable due to the publisher\'s double-blinded peer review policies.</p>'
         );
         break;
+      case 'entry-pending':
+        this.showPopup(
+          'Entry Pending',
+          '<p>Details for this entry are currently being prepared.</p>'
+        );
+        break;
       default:
         console.warn('Unknown popup type:', popupType);
     }
