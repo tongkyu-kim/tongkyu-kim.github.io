@@ -411,20 +411,54 @@ class PopupManager {
         <p>This role positioned me at the intersection of climate diplomacy and academic research, contributing to Korea's international climate leadership while advancing scholarly understanding of transboundary climate cooperation.</p>
       `,
       
-      'Research Associate, Global Circular Economy Center, Hanyang University': `
+      'Researcher, Global Circular Economy Center, Hanyang University': `
+        <h3>Organization Overview</h3>
+        <p>The Global Circular Economy Center (GCEC) at Hanyang University was established in 2021 as the successor to the Energy Governance Center, which had operated since 2011 under the leadership of Professor Younkyoo Kim. The Center conducts interdisciplinary research on sustainability, circular economy, climate policy, energy transition, and environmental governance while supporting policy development and capacity-building initiatives for governments, international organizations, and private-sector partners.</p>
+
         <h3>Role Overview</h3>
-        <p>Conducted interdisciplinary research on circular economy principles and their applications in various industries and policy contexts.</p>
-        
-        <h3>Research Focus</h3>
+        <p>During my Master's studies, I joined GCEC as a Researcher and became actively involved in the Center's research, project management, and institutional operations. Working across government-funded, international cooperation, and corporate projects, I contributed to the development of policy research and sustainability initiatives addressing climate change, circular economy, energy transition, and sustainable industrial development.</p>
+
+        <h3>Research and Policy Development</h3>
+        <p>My primary responsibilities focused on conducting policy-oriented research and supporting the development of large-scale projects related to environmental governance and sustainable development.</p>
+        <p>Key areas of work included:</p>
         <ul>
-          <li>Circular economy implementation in manufacturing and logistics</li>
-          <li>Environmental policy analysis and behavioral economics</li>
-          <li>Sustainable business model development</li>
-          <li>Multi-criteria decision-making analysis for sustainability</li>
+          <li>Circular economy and resource efficiency</li>
+          <li>Climate change mitigation and adaptation</li>
+          <li>Energy transition and renewable energy policy</li>
+          <li>Carbon markets and industrial decarbonization</li>
+          <li>Sustainable consumption and behavioral change</li>
+          <li>Environmental governance and public policy</li>
+          <li>International development cooperation and knowledge sharing</li>
         </ul>
-        
-        <h3>Academic Contributions</h3>
-        <p>Published multiple peer-reviewed articles on circular economy, environmental behavior, and sustainable development, contributing to both academic knowledge and practical policy applications.</p>
+
+        <h3>Project Management and Coordination</h3>
+        <p>In addition to research responsibilities, I supported the management and implementation of multiple government and corporate projects.</p>
+        <p>Responsibilities included:</p>
+        <ul>
+          <li>Drafting research proposals, requests for proposals (RFPs), concept notes, and project documentation</li>
+          <li>Conducting literature reviews, policy analysis, stakeholder mapping, and data collection</li>
+          <li>Preparing presentations, policy briefs, technical reports, and final deliverables</li>
+          <li>Managing research assistants and coordinating project workflows</li>
+          <li>Organizing seminars, workshops, expert consultations, and stakeholder meetings</li>
+          <li>Managing project budgets, administrative processes, and reporting requirements</li>
+          <li>Facilitating communication with government agencies, public institutions, corporate partners, and international stakeholders</li>
+          <li>Providing Korean-English translation and communication support</li>
+        </ul>
+
+        <h3>Representative Contributions</h3>
+        <ul>
+          <li>Contributed to five government-funded projects and multiple private-sector initiatives related to sustainability and environmental governance</li>
+          <li>Supported international development and knowledge-sharing projects involving partner countries in Asia and Latin America</li>
+          <li>Conducted research on climate policy, circular economy strategies, energy transition, and sustainable industrial development</li>
+          <li>Assisted corporate sustainability and decarbonization projects involving major Korean industries</li>
+          <li>Coordinated stakeholder engagement activities involving ministries, public institutions, academic experts, and private-sector organizations</li>
+        </ul>
+
+        <h3>Research Leadership and Mentorship</h3>
+        <p>As project responsibilities expanded, I supervised and coordinated a team of research assistants, supporting project implementation, quality control, data collection, and report preparation. This experience strengthened my skills in project leadership, team management, and interdisciplinary collaboration.</p>
+
+        <h3>Impact</h3>
+        <p>This role provided the foundation for my subsequent work in international development, climate diplomacy, and regional cooperation. Through direct involvement in government, corporate, and international sustainability projects, I developed expertise in environmental policy analysis, project management, stakeholder engagement, and evidence-based policymaking. The experience also deepened my understanding of how sustainability challenges are translated into practical policy solutions across different institutional and national contexts.</p>
       `
     };
     
