@@ -160,9 +160,9 @@ class PopupManager {
         this.showPopup(
           'Korea Home Grown School Meals Study Tour',
           `<h3>Program Overview</h3>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+          <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
             <tbody>
-              <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);font-weight:600;width:38%;vertical-align:top;">Program Title</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">WBG Home Grown School Meals Study Tour</td></tr>
+              <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);font-weight:600;width:25%;vertical-align:top;">Program Title</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">WBG Home Grown School Meals Study Tour</td></tr>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);font-weight:600;vertical-align:top;">Organizing Body</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">World Bank Group (WBG)</td></tr>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);font-weight:600;vertical-align:top;">Duration</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Five (5) days — 18 May (Mon) to 22 May (Fri), 2026</td></tr>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);font-weight:600;vertical-align:top;">Host Country</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Republic of Korea</td></tr>
@@ -173,16 +173,16 @@ class PopupManager {
             </tbody>
           </table>
 
-          <h3>Background and Purpose</h3>
+          <h3 style="margin-top:36px;">Background and Purpose</h3>
           <p>The study tour is conducted under the auspices of the World Bank Group's program for strengthening school feeding policy capacity in Sub-Saharan Africa. Both Zambia and Madagascar are at critical junctures in expanding and institutionalising their national school feeding programs. The program is implemented in close collaboration with the World Food Programme (WFP) and World Bank country offices to maximise the translation of study tour findings into domestic policy action.</p>
 
-          <h3>Day 1 — Monday, 18 May 2026</h3>
+          <h3 style="margin-top:36px;">Day 1 — Monday, 18 May 2026</h3>
           <p style="font-style:italic;color:var(--muted);margin-bottom:8px;">Seoul, Republic of Korea</p>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+          <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
             <thead><tr>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:18%;">Time</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:30%;">Session</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;">Description</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:18%;">Time</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:30%;">Session</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;">Description</th>
             </tr></thead>
             <tbody>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">09:00–09:30</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-weight:600;">Opening Session</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Formal welcome and introductory remarks by the World Bank Group team.</td></tr>
@@ -195,13 +195,13 @@ class PopupManager {
             </tbody>
           </table>
 
-          <h3>Day 2 — Tuesday, 19 May 2026</h3>
+          <h3 style="margin-top:36px;">Day 2 — Tuesday, 19 May 2026</h3>
           <p style="font-style:italic;color:var(--muted);margin-bottom:8px;">Wanju, North Jeolla Province — Focus: Local Food Systems</p>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+          <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
             <thead><tr>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:18%;">Time</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:30%;">Session</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;">Description</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:18%;">Time</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:30%;">Session</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;">Description</th>
             </tr></thead>
             <tbody>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">08:00–10:00</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-weight:600;">Transfer to Wanju</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Coach transfer, approximately two (2) hours.</td></tr>
@@ -212,13 +212,13 @@ class PopupManager {
             </tbody>
           </table>
 
-          <h3>Day 3 — Wednesday, 20 May 2026</h3>
+          <h3 style="margin-top:36px;">Day 3 — Wednesday, 20 May 2026</h3>
           <p style="font-style:italic;color:var(--muted);margin-bottom:8px;">Naju, South Jeolla Province — Focus: National Systems</p>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+          <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
             <thead><tr>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:18%;">Time</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:30%;">Session</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;">Description</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:18%;">Time</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:30%;">Session</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;">Description</th>
             </tr></thead>
             <tbody>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">08:00–09:30</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-weight:600;">Transfer to Naju</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Coach transfer (~90 min), accompanied by an official from the Ministry of Agriculture, Food and Rural Affairs.</td></tr>
@@ -229,13 +229,13 @@ class PopupManager {
             </tbody>
           </table>
 
-          <h3>Day 4 — Thursday, 21 May 2026</h3>
+          <h3 style="margin-top:36px;">Day 4 — Thursday, 21 May 2026</h3>
           <p style="font-style:italic;color:var(--muted);margin-bottom:8px;">Sejong — Focus: Policy Dialogues</p>
-          <table style="width:100%;border-collapse:collapse;margin-bottom:16px;">
+          <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
             <thead><tr>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:18%;">Time</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:30%;">Session</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;">Description</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:18%;">Time</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:30%;">Session</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;">Description</th>
             </tr></thead>
             <tbody>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">09:15–11:30</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-weight:600;">NAAS / KOPIA</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Introduction to the "RicePia" African rice seed initiative, roundtable on agricultural cooperation, and presentation on Korea's rural modernization and agricultural extension systems.</td></tr>
@@ -244,13 +244,13 @@ class PopupManager {
             </tbody>
           </table>
 
-          <h3>Day 5 — Friday, 22 May 2026</h3>
+          <h3 style="margin-top:36px;">Day 5 — Friday, 22 May 2026</h3>
           <p style="font-style:italic;color:var(--muted);margin-bottom:8px;">Seoul, Republic of Korea — Closing</p>
           <table style="width:100%;border-collapse:collapse;margin-bottom:0;">
             <thead><tr>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:18%;">Time</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;width:30%;">Session</th>
-              <th style="padding:7px 10px;background-color:var(--navy-dark);color:white;text-align:left;font-weight:600;">Description</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:18%;">Time</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;width:30%;">Session</th>
+              <th style="padding:7px 10px;background-color:#5e717d;color:white;text-align:left;font-weight:600;">Description</th>
             </tr></thead>
             <tbody>
               <tr><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">08:50–11:00</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;font-weight:600;">Expert Workshop</td><td style="padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;">Delegation teams consolidate key lessons, define a one-year localization roadmap, and develop country-specific action plans through brainstorming, peer review, and expert technical consultation.</td></tr>
