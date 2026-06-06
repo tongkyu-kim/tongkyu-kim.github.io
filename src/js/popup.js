@@ -101,13 +101,13 @@ class PopupManager {
           popupIcon.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            
+
             const title = contentCol.textContent.replace('ⓘ', '').replace('-', '').trim();
-            
+
             // Determine content type based on section
             const section = table.closest('section');
             let content;
-            
+
             if (section && section.id === 'education') {
               content = this.getCertificateContent(title);
             } else if (section && section.id === 'experience') {
@@ -117,6 +117,20 @@ class PopupManager {
             }
 
             const displayTitle = popupIcon.dataset.popupTitle || title;
+            this.showPopup(displayTitle, content);
+          });
+        }
+
+        const listIcon = iconCol?.querySelector('.list-icon');
+        if (contentCol && listIcon) {
+          listIcon.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const title = contentCol.textContent.replace('ⓘ', '').replace('-', '').trim();
+            const cleanTitle = title.replace(/^-\s*/, '').split(' | ')[0].trim();
+            const displayTitle = listIcon.dataset.popupTitle || cleanTitle;
+            const content = this.getListContent(cleanTitle);
             this.showPopup(displayTitle, content);
           });
         }
@@ -312,11 +326,11 @@ class PopupManager {
   }
 
   getExperienceContent(title) {
-    // Clean title by removing dash and date information for matching
-    const cleanTitle = title.replace(/^-\s*/, '').split(' | ')[0].trim();
-    
+    // Normalize non-breaking spaces and strip leading dash/whitespace
+    const cleanTitle = title.replace(/ /g, ' ').replace(/^[-\s]+/, '').trim();
+
     const experiences = {
-      'Assistant Officer, Trade and Investment Unit, ASEAN-Korea Centre': `
+      'Assistant Officer | Trade and Investment Unit, ASEAN-Korea Centre': `
         <h3>Organization Overview</h3>
         <p>The ASEAN-Korea Centre is an intergovernmental organization established by the governments of ASEAN Member States and the Republic of Korea to promote economic cooperation, trade and investment, sustainable development, cultural exchange, and people-to-people connectivity. Working at the intersection of diplomacy, development cooperation, and economic engagement, the Centre serves as a key platform for advancing ASEAN–Korea partnerships across the region.</p>
 
@@ -358,7 +372,7 @@ class PopupManager {
         <p>This role places me at the intersection of regional diplomacy, sustainable development, and economic cooperation. By leading large-scale ASEAN–Korea initiatives, supporting evidence-based policy development, and facilitating cross-border business engagement, I contribute to strengthening long-term partnerships between Korea and Southeast Asia while advancing shared goals in sustainability, innovation, and regional prosperity.</p>
       `,
 
-      'Program Coordinator, Development Impact Evaluation, World Bank Group': `
+      'Program Coordinator | Development Impact Evaluation, World Bank Group': `
         <h3>Organization Overview</h3>
         <p>The Development Impact Evaluation (DIME) unit of the World Bank Group works with governments and development partners to generate evidence that improves policy effectiveness and development outcomes. Through impact evaluations, policy research, and knowledge exchange initiatives, DIME supports evidence-based decision-making across sectors including education, agriculture, social protection, and sustainable development.</p>
 
@@ -403,7 +417,7 @@ class PopupManager {
         <p>This role provided practical experience at the intersection of international development, sustainability, and policy learning. By connecting government practitioners, development organizations, and technical experts across regions, I contributed to the exchange of knowledge on food security, agricultural resilience, and sustainable development while supporting broader World Bank initiatives on green growth and emerging technologies.</p>
       `,
 
-      'Program Consultant, Global Programs Office, Dawa DC': `
+      'Program Consultant | Global Programs Office, Dawa DC': `
         <h3>Organization Overview</h3>
         <p>Dawa DC develops international partnerships, knowledge-exchange initiatives, and strategic cooperation programs that connect Gulf stakeholders with global expertise across economic development, innovation, sustainability, and urban transformation. The office works with governments, businesses, and research institutions to identify opportunities that support long-term economic diversification and sustainable growth.</p>
 
@@ -483,7 +497,7 @@ class PopupManager {
         <p>Contributing to global climate transparency efforts and helping improve the accuracy and comparability of national climate reporting.</p>
       `,
       
-      'Researcher, Climate & Energy Cooperation Center, Ministry of Foreign Affairs': `
+      'Researcher | Climate & Energy Cooperation Center, Ministry of Foreign Affairs': `
         <h3>Organization Overview</h3>
         <p>The Climate & Energy Cooperation Center of the Korean Ministry of Foreign Affairs is an organization branched in the Climate Change Diplomacy Division, dedicated to supporting Korea's climate initiatives.</p>
         
@@ -516,7 +530,7 @@ class PopupManager {
         <p>This role positioned me at the intersection of climate diplomacy and academic research, contributing to Korea's international climate leadership while advancing scholarly understanding of transboundary climate cooperation.</p>
       `,
       
-      'Researcher, Global Circular Economy Center, Hanyang University': `
+      'Researcher | Global Circular Economy Center, Hanyang University': `
         <h3>Organization Overview</h3>
         <p>The Global Circular Economy Center (GCEC) at Hanyang University was established in 2021 as the successor to the Energy Governance Center, which had operated since 2011 under the leadership of Professor Younkyoo Kim. The Center conducts interdisciplinary research on sustainability, circular economy, climate policy, energy transition, and environmental governance while supporting policy development and capacity-building initiatives for governments, international organizations, and private-sector partners.</p>
 
@@ -708,6 +722,36 @@ class PopupManager {
       
       <p><em>Additional details about this qualification and its specific contributions to my professional capabilities will be added.</em></p>
     `;
+  }
+  getListContent(cleanTitle) {
+    const lists = {
+      'Ad hoc Peer Reviewer': `
+        <table style="width:100%;border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="padding:8px 12px;background-color:#5e717d;color:white;text-align:left;font-weight:600;border:1px solid #5e717d;">Journal</th>
+              <th style="padding:8px 12px;background-color:#5e717d;color:white;text-align:left;font-weight:600;border:1px solid #5e717d;width:28%;">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;border:1px solid var(--border);vertical-align:top;">Land Use Policy</td>
+              <td style="padding:8px 12px;border:1px solid var(--border);vertical-align:top;">Jun. 2026</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;border:1px solid var(--border);vertical-align:top;">Energy &amp; Environment</td>
+              <td style="padding:8px 12px;border:1px solid var(--border);vertical-align:top;">May 2026</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;border:1px solid var(--border);vertical-align:top;">Carbon Management</td>
+              <td style="padding:8px 12px;border:1px solid var(--border);vertical-align:top;">Jul. 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    };
+
+    return lists[cleanTitle] || `<p>List details will be added soon.</p>`;
   }
 }
 
