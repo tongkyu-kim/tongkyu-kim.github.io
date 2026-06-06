@@ -168,20 +168,20 @@
   height: 13px;
   margin-left: 6px;
   cursor: pointer;
-  background-color: #5b92e5;
+  background-color: #15234A;
   border-radius: 3px;
   transition: all 0.2s ease;
   font-size: 8px;
   color: white;
   vertical-align: middle;
   flex-shrink: 0;
-  border: 1px solid #5b92e5;
+  border: 1px solid #15234A;
 }
 
 .doi-icon:hover {
-  background-color: #4a7bc8;
+  background-color: #0d1730;
   color: white;
-  border-color: #4a7bc8;
+  border-color: #0d1730;
   transform: scale(1.1);
 }
 
@@ -246,20 +246,20 @@
   height: 13px;
   margin-left: 6px;
   cursor: pointer;
-  background-color: #15234A;
+  background-color: #BC8F8F;
   border-radius: 3px;
   transition: all 0.2s ease;
   font-size: 8px;
   color: white;
   vertical-align: middle;
   flex-shrink: 0;
-  border: 1px solid #15234A;
+  border: 1px solid #BC8F8F;
 }
 
 .list-icon:hover {
-  background-color: #0d1730;
+  background-color: #A87A7A;
   color: white;
-  border-color: #0d1730;
+  border-color: #A87A7A;
   transform: scale(1.1);
 }
 
