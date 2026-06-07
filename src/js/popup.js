@@ -26,6 +26,9 @@ class PopupManager {
     this.overlay.innerHTML = `
       <div class="popup-content">
         <div class="popup-header">
+          <div class="popup-logo-container">
+            <img class="popup-logo" src="" alt="" />
+          </div>
           <h2 class="popup-title"></h2>
           <button class="popup-close" type="button" aria-label="Close">&times;</button>
         </div>
@@ -117,7 +120,8 @@ class PopupManager {
             }
 
             const displayTitle = popupIcon.dataset.popupTitle || title;
-            this.showPopup(displayTitle, content);
+            const logoSrc = popupIcon.dataset.popupLogo || null;
+            this.showPopup(displayTitle, content, logoSrc);
           });
         }
 
@@ -280,9 +284,20 @@ class PopupManager {
     }
   }
 
-  showPopup(title, content) {
+  showPopup(title, content, logoSrc) {
     const titleElement = this.overlay.querySelector('.popup-title');
     const bodyElement = this.overlay.querySelector('.popup-body');
+    const logoContainer = this.overlay.querySelector('.popup-logo-container');
+    const logoImg = this.overlay.querySelector('.popup-logo');
+
+    if (logoSrc) {
+      logoImg.src = logoSrc;
+      logoImg.alt = title;
+      logoContainer.style.display = 'flex';
+    } else {
+      logoContainer.style.display = 'none';
+      logoImg.src = '';
+    }
     
     // Extract clean title without author names and publication details
     let cleanTitle = title;
@@ -530,6 +545,49 @@ class PopupManager {
         <p>This role positioned me at the intersection of climate diplomacy and academic research, contributing to Korea's international climate leadership while advancing scholarly understanding of transboundary climate cooperation.</p>
       `,
       
+      'Sergeant | 703 Special Assault Commando, Republic of Korea Army': `
+        <h3>Role Overview</h3>
+        <p>Served as a Reconnaissance Commando (정찰특공병) in the 8th Company, 2nd Battalion of the 703rd Commando Regiment, an elite special operations unit under the Republic of Korea Army's III Corps responsible for rapid-response and special operations missions. Subsequently served as Squad Leader, overseeing personnel management, training, and operational readiness within a small-unit team.</p>
+        <p>Successfully completed mandatory military service and was honorably discharged upon fulfillment of service obligations on February 4, 2019.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Participated in reconnaissance, infiltration, and special operations training in mountainous and austere environments</li>
+          <li>Led a squad-level team during training exercises and operational activities, ensuring mission readiness and unit cohesion</li>
+          <li>Managed personnel welfare, accountability, and day-to-day leadership responsibilities as Squad Leader</li>
+          <li>Conducted small-unit tactical exercises and field operations requiring high levels of discipline, coordination, and adaptability</li>
+        </ul>
+
+        <h3>Skills Developed</h3>
+        <ul>
+          <li>Team leadership and personnel management</li>
+          <li>Decision-making under pressure</li>
+          <li>Resilience and adaptability</li>
+          <li>Accountability and responsibility</li>
+          <li>Problem-solving in demanding environments</li>
+          <li>Physical endurance and mental toughness</li>
+        </ul>
+
+        <h3>Impact</h3>
+        <p>Military service provided valuable experience leading teams in high-pressure environments where trust, accountability, and mission execution were critical to success. Serving as Squad Leader strengthened my leadership, communication, and decision-making abilities while reinforcing the importance of teamwork and responsibility under challenging conditions.</p>
+      `,
+
+      'School Representative | Graduate Student Council, Hanyang University': `
+        <h3>Role Overview</h3>
+        <p>Served as an elected student representative, acting as a liaison between students, faculty, and the central student government. Represented student interests in discussions related to budgets, activities, academic affairs, and campus operations.</p>
+
+        <h3>Key Contributions</h3>
+        <ul>
+          <li>Coordinated with the central student government on student initiatives and budget-related matters</li>
+          <li>Addressed student concerns and facilitated communication between students and university administration</li>
+          <li>Supported the integration and engagement of both domestic and international students</li>
+          <li>Resolved operational and interpersonal challenges to maintain a positive and collaborative campus environment</li>
+        </ul>
+
+        <h3>Impact</h3>
+        <p>Developed early experience in stakeholder management, conflict resolution, and community leadership while representing a diverse student body and fostering effective communication across the university.</p>
+      `,
+
       'Researcher | Global Circular Economy Center, Hanyang University': `
         <h3>Organization Overview</h3>
         <p>The Global Circular Economy Center (GCEC) at Hanyang University was established in 2021 as the successor to the Energy Governance Center, which had operated since 2011 under the leadership of Professor Younkyoo Kim. The Center conducts interdisciplinary research on sustainability, circular economy, climate policy, energy transition, and environmental governance while supporting policy development and capacity-building initiatives for governments, international organizations, and private-sector partners.</p>
@@ -658,10 +716,8 @@ class PopupManager {
         </ul>
 
         <h3>Academic Perspective</h3>
-        <p>The program emphasized the interaction between politics, economics, and international institutions in addressing complex global challenges. Through courses in international relations, comparative politics, political economy, international organizations, and energy geopolitics, I developed a strong theoretical understanding of how states, markets, and non-state actors shape international cooperation and policy outcomes.</p>
+        <p>Through courses in international relations, comparative politics, political economy, international organizations, and energy geopolitics, I developed a strong theoretical understanding of how states, markets, and non-state actors shape international cooperation and policy outcomes.</p>
 
-        <h3>Key Outcomes</h3>
-        <p>Graduated Cum Laude while building a foundation that later supported research and professional work in climate diplomacy, sustainability transitions, international development, and multilateral cooperation. Developed early analytical interests in global governance, economic cooperation, and the role of public policy in addressing transnational challenges.</p>
       `,
 
       'Climate Change Negotiation Strategies and Diplomacy, Korea National Diplomatic Academy': `

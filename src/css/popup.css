@@ -41,6 +41,44 @@
   position: relative;
 }
 
+.popup-logo-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.popup-logo {
+  width: 98px;
+  height: auto;
+  object-fit: contain;
+}
+
+.popup-logo[src="src/icons/AKC.png"],
+.popup-logo[src="src/icons/Dawa.png"],
+.popup-logo[src="src/icons/World Bank.png"],
+.popup-logo[src="src/icons/ROKA.png"] {
+  width: 144px;
+  transform: translateX(-3%);
+}
+
+.popup-logo[src="src/icons/HYU.svg.png"] {
+  width: 75px;
+}
+
+.popup-logo[src="src/icons/mofa.png"] {
+  width: 88px;
+}
+
+.popup-logo[src="src/icons/Korean gov.png"] {
+  width: 56px;
+}
+
+.popup-logo[src="src/icons/Cambridge.png"] {
+  width: 85px;
+}
+
 .popup-title {
   font-size: 1.18rem;
   font-weight: 700;
