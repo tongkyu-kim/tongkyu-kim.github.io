@@ -1,4 +1,4 @@
-# Academic CV Website — Replication Package
+# CV Website — Replication Package
 
 A static, single-page academic CV website built with plain HTML, CSS, and vanilla JavaScript. No build tools or frameworks required. Designed for researchers and academics who want a clean, professional online CV with interactive popups, icon badges, and GitHub Pages hosting.
 
