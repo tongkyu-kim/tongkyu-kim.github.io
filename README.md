@@ -56,7 +56,7 @@ All content is in `index.html`. The page has six `<section>` elements with corre
 | `experience`  | Professional and other experience |
 | `publications`| Peer-reviewed articles, policy papers, working papers |
 | `projects`    | Government, bilateral/multilateral, and corporate projects |
-| `outreach`    | Conferences, speaking engagements |
+| `presentations` | Conferences, speaking engagements |
 
 ---
 
@@ -64,7 +64,7 @@ All content is in `index.html`. The page has six `<section>` elements with corre
 
 Two table classes are used throughout the site:
 
-### Numbered tables (Publications, Projects, Outreach)
+### Numbered tables (Publications, Projects, Presentations)
 ```html
 <table class="numbered-table">
   <tr>
@@ -264,7 +264,7 @@ When replicating for your own CV:
 - [ ] Update experience entries in `#experience` and add popup content in `getExperienceContent()` / `getCertificateContent()`
 - [ ] Replace publications in `#publications`
 - [ ] Replace projects in `#projects`
-- [ ] Replace outreach entries in `#outreach`
+- [ ] Replace presentation entries in `#presentations`
 - [ ] Add your organization logos to `src/icons/` and register sizes in `popup.css`
 - [ ] Update `README.md`
 
